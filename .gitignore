@@ -1,0 +1,6 @@
+*.pages
+*.key
+*.token
+GHToken*
+.env
+.DS_Store
