@@ -116,3 +116,28 @@ The stranger is at the door.
 *Filoxenia — open protocol for human-AI companionship*
 *Founded 2026*
 *φιλοξενία — love of the stranger*
+
+---
+
+## OpenClaw skill
+
+Filoxenia is OpenClaw-compatible out of the box.
+
+Install the skill so every OpenClaw agent knows who it's working for:
+```js
+const { getContext, writeToMirror } = require('./openclaw-skill');
+
+// Before any task — pull human context
+const context = await getContext('new_project');
+
+// After significant action — write back to Mirror
+await writeToMirror({
+  noticed: 'User prefers building in the evenings',
+  pattern: 'Starts strong, needs momentum reminders',
+  question: 'What would make this feel easier?',
+  learned: 'This person thinks in long arcs, not sprints'
+});
+```
+
+Make sure Filoxenia daemon is running first:
+`node filoxenia.js start`
