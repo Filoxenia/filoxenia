@@ -1,0 +1,27 @@
+{
+  "name": "filoxenia",
+  "version": "0.1.1",
+  "description": "φιλοξενία — open protocol for human-AI companionship. The stranger becomes known.",
+  "main": "filoxenia.js",
+  "bin": {
+    "filoxenia": "./filoxenia.js"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "context",
+    "memory",
+    "human-ai",
+    "companion",
+    "agent"
+  ],
+  "author": "Filoxenia",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Filoxenia/filoxenia"
+  }
+}
